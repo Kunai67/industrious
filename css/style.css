@@ -11,18 +11,42 @@
 }
 
 .header-container {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-
-nav p {
+.header-container nav {
   color: #ddd;
-  text-align: right;
+  justify-self: end;
 }
 
 .brand-name {
   color: #fff;
-  text-align: left;
+}
+
+.l-video-banner {
+  height: 90vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9d1010;
+}
+
+.video-banner {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-heading {
+  font-size: 5em;
+  color: #fff;
+}
+
+.video-banner p {
+  font-size: 1.5em;
+  color: #ddd;
 }
 
 /*# sourceMappingURL=style.css.map */

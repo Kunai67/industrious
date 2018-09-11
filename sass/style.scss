@@ -17,16 +17,41 @@ $c: center;
 }
 
 .header-container {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-nav p {
-  color: $secondary-text;
-  text-align: right;
+  nav {
+    color: $secondary-text;
+    justify-self: end;
+  }
 }
 
 .brand-name {
   color: $primary;
-  text-align: left;
+}
+
+.l-video-banner {
+  height: 90vh;
+  text-align: $c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary;
+}
+
+.video-banner {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-heading {
+  font-size: 5em;
+  color: $primary;
+}
+
+.video-banner p {
+  font-size: 1.5em;
+  color: $secondary-text;
 }
