@@ -2,7 +2,6 @@ $primary: #fff;
 $secondary: #9d1010;
 $secondary-text: #ddd;
 $accent: #333;
-$c: center;
 
 * {
   margin: 0;
@@ -11,9 +10,61 @@ $c: center;
   list-style: none;
 }
 
+// General Styles
+.main-heading, .secondary-heading {
+  margin-bottom: .2em;
+}
+
+.tertiary-heading {
+  margin-bottom: .7em;
+}
+
+.testimonials-heading-wrapper, .main-heading-wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.secondary-heading, .tertiary-heading {
+  color: $accent;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-content i {
+  font-size: 5em;
+  color: $secondary;
+  margin-bottom: .2em;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 2em;
+  margin: 3em 0;
+}
+
+
+.main-heading {
+  font-size: 5em;
+  color: $primary;
+}
+
+.secondary-heading {
+  font-size: 3em;
+}
+
+.tertiary-heading {
+  font-size: 2em;
+}
+
+// Header
 .l-header {
   background-color: $accent;
   width: 100%;
+  padding: 1em 0;
 }
 
 .header-container {
@@ -32,9 +83,10 @@ $c: center;
   color: $primary;
 }
 
+// Video Banner
 .l-video-banner {
   height: 90vh;
-  text-align: $c;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,12 +98,23 @@ $c: center;
   margin: 0 auto;
 }
 
-.main-heading {
-  font-size: 5em;
-  color: $primary;
-}
-
 .video-banner p {
   font-size: 1.5em;
   color: $secondary-text;
+}
+
+// Main Content
+.l-main {
+  padding: 2em 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("https://images.pexels.com/photos/1388982/pexels-photo-1388982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.main-content {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main-content-box {
+  padding: 3em 2em;
+  background-color: $primary;
+  border-radius: 20px;
 }
