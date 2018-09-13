@@ -10,6 +10,28 @@ $accent: #333;
   list-style: none;
 }
 
+// Video Background Style
+.videojs-background-wrap {
+    overflow:hidden;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: -998;
+  }
+//
+
+
+
+
+
+
+
+
+
+
+
 // General Styles
 .main-heading, .secondary-heading {
   margin-bottom: .2em;
@@ -90,7 +112,9 @@ $accent: #333;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $secondary;
+  background: $secondary;
+  opacity: .5;
+  position: relative;
 }
 
 .video-banner {
@@ -107,6 +131,9 @@ $accent: #333;
 .l-main {
   padding: 2em 0;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("https://images.pexels.com/photos/1388982/pexels-photo-1388982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .main-content {
