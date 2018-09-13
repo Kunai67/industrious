@@ -10,28 +10,6 @@ $accent: #333;
   list-style: none;
 }
 
-// Video Background Style
-.videojs-background-wrap {
-    overflow:hidden;
-    position:absolute;
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    z-index: -998;
-  }
-//
-
-
-
-
-
-
-
-
-
-
-
 // General Styles
 .main-heading, .secondary-heading {
   margin-bottom: .2em;
@@ -113,8 +91,6 @@ $accent: #333;
   justify-content: center;
   align-items: center;
   background: $secondary;
-  opacity: .5;
-  position: relative;
 }
 
 .video-banner {
