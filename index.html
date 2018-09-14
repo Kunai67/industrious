@@ -3,22 +3,29 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Industrious</title>
   </head>
   <body>
     <header class="l-header">
       <div class="header-container">
-        <p class="brand-name">Industrious</p>
+        <p class="brand-name"><a href="">Industrious</a></p>
         <nav>
-          <p><i class="fas fa-bars menu-button"></i> Menu</p>
+          <p><i class="fas fa-bars menu-button"></i>Menu</p>
         </nav>
       </div>
     </header>
     <section class="l-video-banner">
-      <div class="video-banner">
+      <!-- Video -->
+      <video autoplay muted loop id="myVideo">
+        <source src="res/vidbanner.mp4" type="video/mp4">
+      </video>
+      <!--  -->
+      <div class="video-container">
         <h1 class="main-heading">INDUSTRIOUS</h1>
-        <p>A responsive business oriented template with a video background designed by TEMPLATED and released under the Creative Commons License.</p>
+        <p>A responsive business oriented template with a video background
+          designed by TEMPLATED and released under the Creative Commons License.</p>
       </div>
     </section>
     <main class="l-main">
@@ -74,20 +81,26 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo a at quaerat facilis asperiores minus ullam minima molestiae et voluptates?</p>
         </div>
         <div class="testimonials grid">
-          <div class="testimonials-box1">
+          <div class="testimonials-box">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nam debitis sapiente aut ipsa eligendi.</p>
-            <img src="" alt="">
-            <h3 class="tertiary-heading">- John Doe<span>- CEO, Lorem ipsum.</span></h3>
+            <div class="ceo-container">
+              <img src="res/testimony1.jpg" alt="">
+              <h3 class="tertiary-heading">- John Doe<span>- CEO, Lorem ipsum.</span></h3>
+            </div>
           </div>
-          <div class="testimonials-box2">
+          <div class="testimonials-box">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nam debitis sapiente aut ipsa eligendi.</p>
-            <img src="" alt="">
-            <h3 class="tertiary-heading">- Juan Dela Cruz<span>- CEO, Lorem ipsum.</span></h3>
+            <div class="ceo-container">
+              <img src="res/testimony2.jpg" alt="">
+              <h3 class="tertiary-heading">- Juan Cruz<span>- CEO, Lorem ipsum.</span></h3>
+            </div>
           </div>
-          <div class="testimonials-box3">
+          <div class="testimonials-box">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nam debitis sapiente aut ipsa eligendi.</p>
-            <img src="" alt="">
-            <h3 class="tertiary-heading">- Gyle Wong<span>- CEO, Lorem ipsum.</span></h3>
+            <div class="ceo-container">
+              <img src="res/testimony3.jpeg" alt="">
+              <h3 class="tertiary-heading">- Gyle Wong<span>- CEO, Lorem ipsum.</span></h3>
+            </div>
           </div>
         </div>
       </div>
@@ -97,7 +110,7 @@
         <div class="footer grid">
           <div class="footer-box1">
             <h3 class="tertiary-heading">Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus aliquid eius, at minima itaque necessitatibus! Repudiandae, cum assumenda ex inventore voluptate. Optio ipsum quod, et ipsa ratione voluptate, quisquam aliquam voluptates tenetur labore quidem sunt dolores animi nostrum veritatis!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus officia cupiditate voluptates nostrum ipsum quis ab molestiae accusamus nisi tempore natus, itaque voluptatibus libero quidem, incidunt harum sit suscipit! Aliquid necessitatibus consequuntur quidem natus facilis, excepturi magni reiciendis, impedit distinctio doloribus ducimus modi mollitia illo recusandae eveniet officia ipsam! Odio.</p>
           </div>
           <div class="footer-box2">
             <h3 class="tertiary-heading">Lorem ipsum dolor sit.</h3>
@@ -109,17 +122,18 @@
             </ul>
           </div>
           <div class="footer-box3">
-            <h3 class="tertiary-heading">Lorem ipsum dolor sit amet.</h3>
+            <h3 class="tertiary-heading">Lorem ipsum dolor sit.</h3>
             <ul>
-              <li><i class="fab fa-twitter"></i>Twitter</li>
-              <li><i class="fab fa-facebook"></i>Facebook</li>
-              <li><i class="fab fa-instagram"></i>Instagram</li>
-              <li><i class="fab fa-github"></i>GitHub</li>
+              <li><i class="fab fa-twitter"></i><a href="">Twitter</a></li>
+              <li><i class="fab fa-facebook"></i><a href="">Facebook</a></li>
+              <li><i class="fab fa-instagram"></i><a href="">Instagram</a></li>
+              <li><i class="fab fa-github"></i><a href="">GitHub</a></li>
             </ul>
           </div>
         </div>
-        <hr>
-        <p>&copy; A copy of <a href="https://templated.co/industrious">Industrious</a> from <a href="https://templated.co/"></a>TEMPLATED</p>
+        <div class="footer-copyright">
+          <p>&copy; A copy of <a href="https://templated.co/industrious">Industrious</a> from <a href="https://templated.co/"></a>TEMPLATED</p>
+        </div>
       </div>
     </footer>
   </body>
