@@ -119,6 +119,18 @@ p, li, a {
   }
 }
 
+.sidebar {
+  a {
+    color: $secondary-text;
+    text-align: center;
+    margin: .5em 0;
+    display: inline-block;
+  }
+   a:not(:first-child) {
+     border-bottom: 1px solid $secondary-text;
+   }
+}
+
 .brand-name a {
   color: $primary;
 }

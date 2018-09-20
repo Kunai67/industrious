@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/sidebarjs/dist/sidebarjs.css">
     <title>Industrious</title>
   </head>
   <body>
@@ -12,8 +13,9 @@
       <div class="header-container">
         <p class="brand-name"><a href="">Industrious</a></p>
         <nav>
-          <p><i class="fas fa-bars menu-button" sidebarjs-toggle></i>Menu</p>
-          <div sidebarjs>
+          <p  sidebarjs-toggle><i class="fas fa-bars menu-button"></i>Menu</p>
+          <div class="sidebar" sidebarjs>
+            <button sidebarjs-toggle>x</button>
             <li><a href="">HOME</a></li>
             <li><a href="">CONTACT</a></li>
             <li><a href="">PRICING</a></li>
@@ -141,5 +143,9 @@
         </div>
       </div>
     </footer>
+    <script src="node_modules/sidebarjs/dist/sidebarjs.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var sidebarjs = new SidebarJS.SidebarElement({position: "right"});
+    </script>
   </body>
 </html>

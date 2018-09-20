@@ -95,6 +95,16 @@ p, li, a {
   margin-right: 0.5em;
 }
 
+.sidebar a {
+  color: #dddddd;
+  text-align: center;
+  margin: 0.5em 0;
+  display: inline-block;
+}
+.sidebar a:not(:first-child) {
+  border-bottom: 1px solid #dddddd;
+}
+
 .brand-name a {
   color: #ffffff;
 }
