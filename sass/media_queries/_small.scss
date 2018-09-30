@@ -1,0 +1,135 @@
+@media screen and (max-width: 900px) {
+  .video-container {
+    h1 {
+      font-size: 3em;
+      margin-bottom: .2em;
+    }
+
+    p {
+      font-size: .8em;
+    }
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .testimonials.grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .ceo-container {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1em;
+  }
+
+  .ceo-container h3 {
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+  .ceo-container img {
+    justify-self: flex-end;
+    width: 5em;
+    height: 5em;
+  }
+}
+
+@media screen and (min-width: 699px) and (max-width: 849px)  {
+  .testimonials-box p {
+    border-left: .5em solid lightgray;
+    border-right: .5em solid lightgray;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .testimonials.grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .ceo-container {
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1em;
+  }
+
+  .ceo-container h3 {
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+  .ceo-container img {
+    justify-self: flex-end;
+    width: 5em;
+    height: 5em;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .video-container, .main-heading-wrapper, .testimonials-heading-wrapper {
+      width: 85%;
+  }
+
+  .footer {
+    grid-template-areas: 'box1'
+    'box2'
+    'box3';
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .ceo-container h3 {
+    margin-left: 1em;
+    margin-bottom: 0;
+  }
+
+  .testimonials-box .ceo-container span {
+    display: block;
+  }
+
+  .testimonials-box p {
+    border-left: .5em solid lightgray;
+    padding: 1em 0 1em .7em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .video-container h1 {
+    font-size: 2.2em;
+  }
+
+  .l-banner-ad h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .ceo-container h3 {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .testimonials-box .ceo-container span {
+    display: block;
+  }
+
+  .testimonials-box p {
+    border-left: .2em solid lightgray;
+    padding: 1em 0 1em .7em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ceo-container h3 {
+    font-size: 1em;
+  }
+
+  .testimonials-box .ceo-container span {
+    font-size: .75em;
+  }
+}

@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -13,12 +14,14 @@
       <div class="header-container">
         <p class="brand-name"><a href="">Industrious</a></p>
         <nav>
-          <p  sidebarjs-toggle><i class="fas fa-bars menu-button"></i>Menu</p>
+          <p sidebarjs-toggle><i class="fas fa-bars menu-button"></i>Menu</p>
           <div class="sidebar" sidebarjs>
-            <button sidebarjs-toggle>x</button>
-            <li><a href="">HOME</a></li>
-            <li><a href="">CONTACT</a></li>
-            <li><a href="">PRICING</a></li>
+            <div class="sidebar-items">
+              <button sidebarjs-toggle>&times;</button>
+              <li><a href="">HOME</a></li>
+              <li><a href="">CONTACT</a></li>
+              <li><a href="">PRICING</a></li>
+            </div>
           </div>
         </nav>
       </div>
@@ -92,21 +95,21 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nam debitis sapiente aut ipsa eligendi.</p>
             <div class="ceo-container">
               <img src="res/testimony1.jpg" alt="">
-              <h3 class="tertiary-heading">- John Doe<span>- CEO, Lorem ipsum.</span></h3>
+              <h3 class="tertiary-heading"> John Doe<span>- CEO, Lorem ipsum.</span></h3>
             </div>
           </div>
           <div class="testimonials-box">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nam debitis sapiente aut ipsa eligendi.</p>
             <div class="ceo-container">
               <img src="res/testimony2.jpg" alt="">
-              <h3 class="tertiary-heading">- Juan Cruz<span>- CEO, Lorem ipsum.</span></h3>
+              <h3 class="tertiary-heading"> Juan Cruz<span>- CEO, Lorem ipsum.</span></h3>
             </div>
           </div>
           <div class="testimonials-box">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nam debitis sapiente aut ipsa eligendi.</p>
             <div class="ceo-container">
               <img src="res/testimony3.jpeg" alt="">
-              <h3 class="tertiary-heading">- Gyle Wong<span>- CEO, Lorem ipsum.</span></h3>
+              <h3 class="tertiary-heading"> Gyle Wong<span>- CEO, Lorem ipsum.</span></h3>
             </div>
           </div>
         </div>
@@ -145,7 +148,7 @@
     </footer>
     <script src="node_modules/sidebarjs/dist/sidebarjs.min.js" charset="utf-8"></script>
     <script type="text/javascript">
-      var sidebarjs = new SidebarJS.SidebarElement({position: "right"});
+      var sidebarjs = new SidebarJS.SidebarElement({position: "right", backdropOpacity: 0});
     </script>
   </body>
 </html>

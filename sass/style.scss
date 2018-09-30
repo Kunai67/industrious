@@ -37,6 +37,10 @@ $rgba: rgba(0,0,0,1);
   line-height: 1.5;
 }
 
+body {
+  position: relative;
+}
+
 // General Styles
 .main-heading, .secondary-heading {
   @extend %heading;
@@ -98,6 +102,8 @@ p, li, a {
   background-color: $accent;
   width: 100%;
   padding: 1em 0;
+  position: fixed;
+  z-index: 1;
 }
 
 .header-container {
@@ -109,6 +115,7 @@ p, li, a {
   nav {
     color: $secondary-text;
     justify-self: end;
+    position: relative;
     p {
       transition: all .5s ease;
     }
@@ -120,15 +127,43 @@ p, li, a {
 }
 
 .sidebar {
+  position: fixed;
   a {
     color: $secondary-text;
     text-align: center;
-    margin: .5em 0;
+    margin: .5em 2em;
     display: inline-block;
   }
-   a:not(:first-child) {
-     border-bottom: 1px solid $secondary-text;
+
+  a, button {
+    transition: color ease .5s;
+  }
+
+  a:hover, button:hover {
+    color: $primary;
+  }
+
+  button {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    background-color: inherit;
+    border: none;
+    color: $secondary-text;
+    font-size: 2em;
+    align-self: flex-end;
    }
+
+   button:focus {
+     border: none;
+     outline: none;
+   }
+}
+
+.sidebar-items {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
 }
 
 .brand-name a {
@@ -137,7 +172,7 @@ p, li, a {
 
 // Video Banner
 .l-video-banner {
-  height: 90vh;
+  height: 100vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -163,7 +198,8 @@ video {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: auto;
+  min-height: 100%;
+  object-fit: fill;
   z-index: -1;
 }
 //
@@ -314,3 +350,5 @@ nav p:hover {
 .footer-box3 li a:hover, .footer-box2 li:hover, .footer-copyright a:hover {
   color: $secondary;
 }
+
+@import 'media';
